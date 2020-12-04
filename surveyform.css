@@ -1,0 +1,79 @@
+body { background: #483DA1; }
+
+div#empty-div {
+	background: rgba(0, 25, 25, 1);
+	position: fixed;
+	top: 0; left: 0; right: 0;
+	width: 100vw;
+	height: 12vh;
+	z-index: 2;
+}
+
+h1#title, p#description {
+	text-align: center;
+	color: white;
+	z-index: 1;
+}
+
+p#description {
+	font-size: 20px;
+}
+
+div#form-div {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background-color: #162D50;
+	opacity: 0.8;
+	border-radius: 15px;
+	margin: auto;
+	width: 50vw;
+	z-index: 1;
+}
+
+form#survey-form {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	width: 90%;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 400;
+}
+
+input#name, input#email, input#age, input#telephone {
+	padding: 10px;
+	width: 95%;
+}
+
+input:hover, select:hover, textarea:hover {
+	border-color: #05FFF0;
+}
+
+select#dropdown {
+	width: 99%;
+	padding: 10px;
+}
+
+input, select, textarea {
+	display: block;
+	border-radius: 8px;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+fieldset {
+	border: none;
+}
+
+label {
+	display: inline;
+}
+
+#definite, #maybe, #unsure, #gm, #wf, #gpl, #frontend, #backend {
+	display: inline;
+}
+
+textarea#comment {
+	padding: 10px;
+}

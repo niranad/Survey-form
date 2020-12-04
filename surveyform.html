@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Niranad Survey</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta description="Niranad Survey">
+	<link rel="stylesheet" href="surveyform.css" />
+</head>
+<body>
+	<header>
+		<div id="empty-div"></div> 
+	</header>
+	
+	<br /> <br /> <br />
+
+	<main>
+		<div id="title-description">
+			<h1 id="title">Niranad: Survey form</h1>
+			<p id="description">Thanks for taking the time to help improve our products and services</p>
+		</div>
+		<div id="form-div">
+			<form action="https://www.freecodecamp.com/form-submit" id="survey-form">
+				<label for="name" id="name-label">Name</label>
+				<input type="text" id="name" placeholder="Enter your name (in full)" required />
+				<label for="email" id="email-label">Email</label>
+				<input type="email" id="email" placeholder="example@email.com" required />
+				<label for="age" id="age-label">Age(optional)</label>
+				<input type="number" id="age" placeholder="Enter your age" min="18" max="100" />
+				<label for="telephone">Telephone(optional)</label>
+				<input type="tel" id="telephone" placeholder="Enter your mobile number" /> 
+				<label for="dropdown">Choose a description of your current role:</label>
+				<select id="dropdown">
+					<option selected disabled>Select your current role</option>
+					<option>Beginner programmer</option>
+					<option>Freelance developer</option>
+					<option>Full-time developer</option>
+					<option>Employer</option>
+					<option>Tech consultant</option>
+					<option>none</option>
+				</select>
+					
+				<label for="recommend">Would you recommend RunSoft to your organization?</label>
+				<fieldset id="recommend">
+					<input id="definite" type="radio" value="Definitely" name="recommend" />
+					<label for="definite">Definitely</label>
+					<br />
+					<input id="maybe" type="radio" value="Maybe" name="recommend" /> 
+					<label for="maybe">Maybe</label>
+					<br />
+					<input id="unsure" type="radio" value="Not sure" name="recommend" />
+					<label for="unsure">Not sure</label> 
+				</fieldset>
+
+				<label for="improve-radio">Which of our products or services would you like to improve?</label>
+				<fieldset id="improve-radio">
+					<input id="gm" type="checkbox" value="gM" name=improve />
+					<label for="gm">getMortgage(gM)</label>
+					<br />
+					<input id="wf" type="checkbox" value="WL" name=improve /> 
+					<label for="wf">WeatherLens(WL)</label>
+					<br />
+					<input id="gpl" type="checkbox" value="GPL" name=improve /> 
+					<label for="gpl">GamePlay(GPL)</label>
+					<br />
+					<input id="frontend" type="checkbox" value="Front-end" name=improve />
+					<label for="frontend">Frontend services</label> 
+					<br />
+					<input id="backend" type="checkbox" value="Backend" name=improve/> 
+					<label for="backend">Backend services</label>
+				</fieldset>
+
+				<label for="comment">Any comments or suggestions?</label>
+				<textarea id="comment" placeholder="Enter your comments here..." rows="5" cols="57"></textarea>
+
+				<input type="submit" value="SUBMIT" id="submit" />
+			</form>
+		</div>
+	</main>
+	
+</body>
+</html>
